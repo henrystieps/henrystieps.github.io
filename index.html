@@ -1,32 +1,53 @@
 <html>
     <head>
+      <script>
+
+        var clicks = 0;
+
+          function myFunction() {
+            clicks++;
+            document.getElementById("changeMessage").innerHTML = "You clicked the like button "+clicks+" times";
+            console.log(clicks);
+          }
+
+        </script>
       <style>
           body {
-                background-color: blue;
+                background-color: white;
                 }
 
             h1 {
                   font-size: 48;
                   font-style: oblique;
-                  color: orange;
+                  color: black;
                   text-align: center;
                 }
             h2 {
                   font-size: 24;
                   font-style: oblique;
-                  color: orange;
-                  text-align: left;
+                  color: black;
+                  text-align: center;
                 }
             img {
                   image-orientation: center;
                 }
+            h3  {
+
+            }
      </style>
    </head>
    <body bgcolor = "#FFC812">
-          <h1>This Site is dedicated to the career of Bartolo Colon, along with a lot of random sports gifs.</h1>
-          <h2>Bartolo Colon depicted below.</h2>
-          <img src="bartolocolon.jpg" alt="Bartolo Colon" style="width:411px;height:275px;">
-          <img src="bartolo-losing-helmet.gif" alt="Cute Bartolo" style="width:640px;height:360px;">
-          <img src="harden.gif" alt="Savage Harden" style="width:576px;height:324;">
-          <img src="BigPapiHurts.gif" alt="Oye Como Balls" style="width:500px;height:281px;">
+          <h1>Wireless Project Concepts</h1>
+          <h2>This site was created by Henry Stiepleman</h2>
+          <h3>JavaScript in Action!</h3>
+          <img src="IMG_4947.jpg" alt="Concert-On-The-Go" style="width:3264px;height:2448px;">
+          <img src="IMG_4948.jpg" alt="Do-The-Stanky-Leg" style="width:3264px;height:2448px;">
+          <img src="IMG_4949.jpg" alt="Blind-Charge" style="width:3264px;height:2448px;">
+          <img src="IMG_4945.jpg" alt="Temp-Tile" style="width:3264px;height:2448px;">
+          <img src="IMG_4946.jpg" alt="Fire-Lite" style="width:3264px;height:2448px;">
+          <p id="changeMessage">Click the like Button</p>
+
+  <button type="button" onclick="myFunction()">Try it</button>
+
+
 </html>
